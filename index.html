@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Planet 1.1.1</title>
+	<title>Planet 1.1.1 <script>makeid(5)</script></title>
     <link rel="icon" href="https://pixl-8.github.io/planet-beta/logo.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.css">
@@ -38,6 +38,17 @@
 		</div>
 	</nav>
 	</div>
+	<script>
+	function makeid(length) {
+	   var result           = '';
+	   var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+	   var charactersLength = characters.length;
+	   for ( var i = 0; i < length; i++ ) {
+	      result += characters.charAt(Math.floor(Math.random() * charactersLength));
+	   }
+	   return result;
+	}
+	</script>
   <div id="welcomepage" class="container loginform">
     <div class="col s12">
       <div class="row">
