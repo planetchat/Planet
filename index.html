@@ -64,9 +64,23 @@
           <label>Resolver</label>
         </div>
       </div>
+	    <script>
+		    function makeid(length) {
+   			var result           = '';
+   			var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+   			var charactersLength = characters.length;
+   			for ( var i = 0; i < length; i++ ) {
+     			 result += characters.charAt(Math.floor(Math.random() * charactersLength));
+   			}
+   			return result;
+			}
+		    var gen = document.getElementById("gen");
+		    gen.innerText = makeid(5);
+	    </script>
       <div class="row">
         <div class="input-field col s9 offset-s1">
           <input id="room" type="text" placeholder="Room ID (eg. general, programming, memes)">
+		<p>Here's a room ID generated just for you: <p id="gen"></p></p>
         </div>
       </div>
       <div class="row">
