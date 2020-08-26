@@ -40,7 +40,7 @@ function initialize() {
 
            event.preventDefault();
 		   if (message == "/help") {
-			pushMessage({nick: '## PlanetBot ##', text: 'Commands: /help, /online, /stats, /morestats, /setTheme [theme], /ban [user], /kick [user].'})
+			pushMessage({nick: '## PlanetBot ##', text: 'Commands: /help, /online, /stats, /morestats, /leave, /setTheme [theme], /ban [user], /kick [user].'})
 		   } else if (message.substring(0, 5) == "/ban ") {
 			   var userToBan = message.substring(6);
 			   send({cmd: 'ban', nick: userToBan});
@@ -58,6 +58,8 @@ function initialize() {
 			   send({cmd: 'stats'});
 		   } else if (message == "/morestats") {
 			   send({cmd: 'morestats'});
+		   } else if (message == "/leave") {
+			   window.close();
 		   } else {
            send({cmd: 'chat', text: message});
 		   }
@@ -92,7 +94,7 @@ function join(channel, cUsername, cPassword, cServer) {
 	} else if (cServer == "minuxchat") {
 		ws = new WebSocket('ws://minuxgix.tk/app1/');
 	} else {
-		pushMessage({nick: '## HatClient ##', text: 'You are not connected. If you were previously in a channel, please wait a few moments.'})
+		pushMessage({nick: '## PlanetBot ##', text: 'You are not connected. If you were previously in a channel, please wait a few moments.'})
 	}
 
 	var wasConnected = false
