@@ -11,12 +11,12 @@ Planetchat currently has support for some themes which change colors and more, b
 
 Commands
 ========
-There are a few built-in commands for HatClient
+There are a few built-in commands for Planet
 - `/help` — Displays all available commands.
 - `/online` — Displays the number of users connected to the current room.
 - `/stats` — Displays the number of unique IP's connected to the current fork, as well as the number of channels in use.
 - `/morestats` — Displays additional information about the current fork, such as the number of messages sent and server uptime.
-- `/setTheme [theme]` — Changes HatClient's theme without navigating to the settings menu. Available themes are `dark`, `solarized`, and `default`.
+- `/setTheme [theme]` — Changes Planet's theme without navigating to the settings menu. Available themes are `dark`, `solarized`, and `default`.
 ### Mod-Only Commands
 - `/ban [user]` — Bans a user from the server.
 - `/kick [user]` — Kicks a user from the channel.
