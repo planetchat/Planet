@@ -37,7 +37,7 @@ function initialize() {
 
            event.preventDefault();
 		   if (message == "/help") {
-			pushMessage({nick: '## HatClient ##', text: 'Commands: /help, /online, /stats, /morestats, /setTheme [theme], /ban [user], /kick [user].'})
+			pushMessage({nick: '## PlanetBot ##', text: 'Commands: /help, /online, /stats, /morestats, /setTheme [theme], /ban [user], /kick [user].'})
 		   } else if (message.substring(0, 5) == "/ban ") {
 			   var userToBan = message.substring(6);
 			   send({cmd: 'ban', nick: userToBan});
@@ -46,7 +46,7 @@ function initialize() {
 			   send({cmd: 'kick', nick: userToKick});
 		   } else if (message == "/online") {
 			    var onlineList = onlineUsers.join(', ') + '.';
-				pushMessage({nick: '## HatClient ##', text: 'Users online: ' + onlineList});
+				pushMessage({nick: '## PlanetBot ##', text: 'Users online: ' + onlineList});
 		   } else if (message.substring(0, 10) == "/setTheme ") {
 			   	var setTheme = message.substring(10);
 				localStorage.setItem("theme", setTheme);
@@ -79,9 +79,9 @@ function join(channel, cUsername, cPassword, cServer) {
 	if (cServer == "hackchat") {
 		ws = new WebSocket('wss://hack.chat/chat-ws');
 	} else if (cServer == "1111") {
-		ws = new WebSocket('ws://1.1.1.1');
+		ws = new WebSocket('https://1.1.1.1');
 	} else if (cServer == "1001") {
-		ws = new WebSocket('ws://1.0.0.1');
+		ws = new WebSocket('https://1.0.0.1');
 	} else if (cServer == "sleepychat") {
 		ws = new WebSocket('ws://sleepykev.tk:6060');
 	} else if (cServer == "hatchat") {
