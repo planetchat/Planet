@@ -1,4 +1,4 @@
-# PLanet
+# Planet
 ### Multiple Themes
 HatClient currently has support for some themes which change colors and more, but it will soon have over 15 different themes. Perfect for any user!<br>The current themes available for HatClient include:<br>
 * Default (The default, white backround and black text theme)
