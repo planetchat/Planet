@@ -3,6 +3,9 @@
 	var chatServer = document.getElementById("serverchoice").value;
 	var chatRoom = document.getElementById("room").value;
 	// Why is this ^ here twice? I don't know. 
+if (chatRoom = "") {
+	var chatRoom = "general";
+}
 
 function $(query) {return document.querySelector(query)}
 
