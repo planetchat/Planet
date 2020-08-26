@@ -78,10 +78,10 @@ function join(channel, cUsername, cPassword, cServer) {
 	var room = channel;
 	if (cServer == "hackchat") {
 		ws = new WebSocket('wss://hack.chat/chat-ws');
-	} else if (cServer == "32chat") {
-		ws = new WebSocket('ws://chat.32ch.org:80');
-	} else if (cServer == "toastychat") {
-		ws = new WebSocket('wss://chat.toastystoemp.com/chatws');
+	} else if (cServer == "1111") {
+		ws = new WebSocket('ws://1.1.1.1');
+	} else if (cServer == "1001") {
+		ws = new WebSocket('ws://1.0.0.1');
 	} else if (cServer == "sleepychat") {
 		ws = new WebSocket('ws://sleepykev.tk:6060');
 	} else if (cServer == "hatchat") {
