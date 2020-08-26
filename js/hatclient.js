@@ -59,6 +59,7 @@ function initialize() {
 		   } else if (message == "/morestats") {
 			   send({cmd: 'morestats'});
 		   } else if (message == "/leave") {
+			   document.location.reload(true);
 			   window.close();
 		   } else {
            send({cmd: 'chat', text: message});
