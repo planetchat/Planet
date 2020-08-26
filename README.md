@@ -7,7 +7,7 @@ Planetchat currently has support for some themes which change colors and more, b
 * Solarized<br>
 
 ## Contributors/Credits
-- Coming soon!
+- Thanks to [Hack.chat](https://hack.chat)
 
 Commands
 ========
