@@ -8,6 +8,7 @@ Planet currently has support for some themes which change colors and more, but i
 
 ## Contributors/Credits
 - Thanks to [Hack.chat](https://hack.chat)
+- Super big thanks to HatClient for the base
 
 Commands
 ========
