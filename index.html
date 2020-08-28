@@ -56,8 +56,8 @@
       </div>
       <div class="row">
         <div class="input-field col s9 offset-s1">
-          <input id="room" type="text" placeholder="Room ID (eg. general, programming, memes)">
-	Here's a room ID generated just for you: <span id="gen">Loading...</span>
+          <input id="room" type="text" placeholder="Channel ID (eg. general, programming, memes)">
+	Here's a channel ID generated just for you: <span id="gen">Loading...</span>
         </div>
       </div>
     <script>
@@ -71,7 +71,7 @@
 		return result;
 		}
 	    var gen = document.getElementById("gen");
-	    gen.innerText = makeid(5);
+	    gen.innerText = makeid(8);
     </script>
       <div class="row">
         <div class="input-field col s9 offset-s1">
@@ -98,7 +98,7 @@
   <ul id="messages" class="collection">
   
   </ul>
-  <div class="container">
+  <!--<div class="container">
 	<div class="row">
 		<form class="col s12">
 		  <div class="row">
@@ -112,7 +112,7 @@
 		</form>
 	  </div>
   </div>
-  </div>
+  </div>-->
 	 <!-- Modal Structure -->
 	 <div id="settingsmodal" class="modal bottom-sheet">
 		<div class="modal-content">
@@ -147,7 +147,7 @@
 				Planet has 8 built-in commands. These can be triggered by typing them into the message box.<br>
 				<ul class="cmds">
 				<li><span class="cmd">/help</span> &mdash; Displays all available commands.</li>
-				<li><span class="cmd">/online</span> &mdash; Displays the number of users connected to the current room.</li>
+				<li><span class="cmd">/online</span> &mdash; Displays the number of users connected to the current channel.</li>
 				<li><span class="cmd">/stats</span> &mdash; Displays the number of unique IP's connected to the current fork, as well as the number of channels in use.</li>
 				<li><span class="cmd">/morestats</span> &mdash; Displays additional information about the current fork, such as the number of messages sent and server uptime.</li>
 				<li><span class="cmd">/leave</span> &mdash; Disconnects you from the current channel.</li>
